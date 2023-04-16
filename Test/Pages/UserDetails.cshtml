@@ -1,0 +1,34 @@
+﻿@page
+@model Test.Pages.UserDetailsModel
+@{
+    ViewData["Title"] = "User Details";
+}
+<div class="container">
+    <h5 class="head">User Details</h5>
+</div>
+<div class="col one rounded" style="background-color:#FFC93C;padding:20px">
+    <div class="container bg-transparent">
+        <p class="para">
+            ID:
+        </p>
+        <p class="para">
+            Email:
+        </p>
+        <div class="col-md-8 btn-container" style="text-align: left">
+            <input type="submit" class="btn btn-primary" value="Reset Password" display="block" style="background-color: darkred; margin:20px; text-align:center;" />
+        </div>
+    </div>
+    <div class="container bg-transparent">
+        <p class="para">
+            Profit:
+        </p>
+        <p class="para">
+            Current Profit:
+        </p>
+        <div class="col-md-8 btn-container" style="text-align: left">
+            <input type="submit" class="btn btn-primary" value="Edit" display="block" style="background-color: darkred; margin:20px; text-align:center;" />
+            <input type="submit" class="btn btn-danger" value="Delete" display="block" style="margin:20px; text-align:center;" />
+        </div>
+    </div>
+</div>
+

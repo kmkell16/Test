@@ -1,0 +1,49 @@
+﻿@page
+@model Test.Pages.AdminPortalModel
+@{
+    ViewData["Title"] = "Admin Portal";
+}
+<!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> -->
+<h1 class="head" style="text-align: center;">Welcome to the Admin Portal!</h1>
+
+<div class="container-md">
+    <div class="row noMargin">
+        <div class="col one rounded" style="background-color:#FFC93C;padding:20px;margin:10px;">
+            <h5 class="head">Lookup User/Group</h5>
+            <div class="col-6" style="text-align: center;">
+                <input type="text" placeholder="Enter an ID #..." class="form-control" style="margin: 20px" />
+                <div class="container" style="margin: 0; text-align: center;">
+                    <div class="btn-container" style="margin: auto">
+                        <div class="col-md-8 text-center">
+                            <input type="submit" class="btn btn-primary" value="Lookup" display="block" style="background-color: #5BC0F8; margin: 20px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col two rounded" style="background-color:#FFC93C; padding:20px; margin:10px;">
+            <h5 class="head">Set Cycle Profit</h5>
+            <div class="col-6 text-left">
+                <p class="para">Current Total: $x </p>
+                    <div class="btn-container">
+                        <div class="col-md-8 btn-container" style="text-align: right">
+                            <input type="submit" class="btn btn-primary" value="Edit" display="block" style="background-color: darkred; margin:20px; text-align:center;" />
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row noMargin">
+        <div class="col two rounded" style="background-color:#FFC93C; padding:20px;margin:10px;text-align: center">
+            <div class="col-md-4 btn-container text-center" padding:20px">
+                <input type="submit" class="btn btn-outline-dark btn-block" value="Create New User" display="block" style="background-color: #5BC0F8; text-align: center;" />
+            </div>
+        </div>
+        <div class="col two rounded" style="background-color:#FFC93C; padding:20px;margin:10px;">
+            <div class="col-md-4 btn-container text-center" padding:20px">
+                <input type="submit" class="btn btn-outline-dark btn-block" value="Create New Group" display="block" style="background-color: #5BC0F8; text-align: center;" />
+            </div>
+        </div>
+        </div>
+</div>
+

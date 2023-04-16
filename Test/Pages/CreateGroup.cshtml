@@ -1,0 +1,21 @@
+﻿@page
+@model Test.Pages.CreateGroupModel
+@{
+    ViewData["Title"] = "Create Group";
+}
+<div>
+    <h5 class="head">
+        New Group
+    </h5>
+</div>
+<div class="col one rounded" style="background-color:#FFC93C;padding:20px">
+    <form>
+        <div class="form-group">
+            <label for="UserName">User Name:</label>
+            <input type="text" class="form-control" id="CreateUserName" aria-describedby="UserName">
+        </div>
+        <div class="col-md-8 text-center" style="margin: auto; padding: 10px;">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</div>

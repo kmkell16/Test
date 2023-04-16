@@ -1,0 +1,38 @@
+﻿@page 
+@model Test.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="head" text-align="center">
+    <h5>Login to RediRND</h5>
+</div>
+<div class="container border rounded border-light" style="padding:20px; background-color: #CBE4DE; width: 70%">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row" style="padding:20px">
+            <div class="col-2 text-left">
+                <label asp-for="Credential.UserName"></label>
+            </div>
+            <div class="col-6 text-left">
+                <input type="text" asp-for="Credential.UserName" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Credential.UserName"></span>
+        </div>
+        <div class="form-group row" style="padding:20px">
+            <div class="col-2 text-left">
+                <label asp-for="Credential.Password"></label>
+            </div>
+            <div class="col-6 text-left">
+                <input type="password" asp-for="Credential.Password" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Credential.Password"></span>
+        </div>
+        <div class="col-auto btn-container">
+            <div class="col-md-8 text-center">
+                <input type="submit" class="btn btn-outline-dark btn-block" value="Login" display="block" style="background-color: #5BC0F8;" />
+            </div>
+        </div>
+    </form>
+</div>
+

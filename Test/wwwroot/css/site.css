@@ -1,0 +1,46 @@
+html {
+    font-size: 14px;
+}
+
+.footer, .navbar, .btn {
+    font-family: 'Golos Text', sans-serif;
+} 
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.text-left, .head {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 5px 10px;
+    text-align: center;
+}
+.para, form-control {
+    font-family: 'Kanit', sans-serif;
+    margin: 5px 20px
+}
+.btn-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-item {
+    padding: 25px 5px 0 5px;
+    text-align: center;
+}
+
+
